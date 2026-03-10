@@ -13,7 +13,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/facebook/ios-snapshot-test-case.git", "2.2.3"..<"9.0.0"),
+        .package(url: "https://github.com/mediamonks/ios-snapshot-test-case.git", from: "2.2.3"),
         .package(url: "https://github.com/specta/expecta.git", from: "1.0.0"),
         .package(url: "https://github.com/specta/specta.git", from: "2.0.0")
     ],
