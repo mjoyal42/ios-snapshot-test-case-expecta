@@ -5,13 +5,40 @@ Expecta Matchers for FBSnapshotTestCase
 
 [![Build and test](https://github.com/dblock/ios-snapshot-test-case-expecta/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/dblock/ios-snapshot-test-case-expecta/actions/workflows/build-and-test.yml)
 
-### Usage
+### Installation
+
+#### CocoaPods
 
 Add `Expecta+Snapshots` to your Podfile, the latest `FBSnapshotTestCase` will come in as a dependency.
 
 ``` ruby
 pod 'Expecta+Snapshots'
 ```
+
+#### Swift Package Manager
+
+Add `Expecta+Snapshots` to your project using Xcode's "Add Package Dependencies" feature, or add it directly to your `Package.swift`:
+
+``` swift
+dependencies: [
+    .package(url: "https://github.com/dblock/ios-snapshot-test-case-expecta.git", from: "3.2.0")
+]
+```
+
+Then add the package to your target's dependencies:
+
+``` swift
+targets: [
+    .target(
+        name: "YourTarget",
+        dependencies: [
+            .product(name: "ExpectaSnapshots", package: "ios-snapshot-test-case-expecta")
+        ]
+    )
+]
+```
+
+### Usage
 
 ### App setup
 
