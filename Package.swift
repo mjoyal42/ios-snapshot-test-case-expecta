@@ -14,14 +14,14 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/mediamonks/ios-snapshot-test-case.git", from: "2.2.3"),
-        .package(url: "https://github.com/specta/expecta.git", from: "1.0.0"),
-        .package(url: "https://github.com/specta/specta.git", from: "2.0.0")
+        .package(url: "https://github.com/hudl/expecta.git", branch: "spm"),
+        .package(url: "https://github.com/mjoyal42/specta.git", branch: "spm-support")
     ],
     targets: [
         .target(
             name: "ExpectaSnapshots",
             dependencies: [
-                .product(name: "iOSSnapshotTestCase", package: "ios-snapshot-test-case"),
+                .product(name: "FBSnapshotTestCase", package: "ios-snapshot-test-case"),
                 .product(name: "Expecta", package: "expecta"),
                 .product(name: "Specta", package: "specta")
             ],
